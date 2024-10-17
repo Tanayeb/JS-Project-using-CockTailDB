@@ -1,0 +1,5 @@
+/* Optional: Define .hidden in your CSS if you want to use it outside of Tailwind */
+.hidden {
+     display: none !important; /* Ensure that it hides the modal */
+ }
+ 

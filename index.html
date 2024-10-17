@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail DB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto p-5">
+        <h1 class="text-center text-3xl font-bold mb-5">CockTail DB</h1>
+
+        <div class="flex justify-center mb-10">
+            <input type="text" id="searchInput" placeholder="Search For Cocktail" class="p-2 w-1/2 rounded-lg bg-gray-700 text-white focus:outline-none">
+            <button id="search-btn" class="ml-2 p-2 bg-blue-500 rounded-lg"><i class="fas fa-search"></i> Search</button>
+        </div>
+
+        <div id="cocktail-list" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5"></div>
+        <p id="noCocktail" class="text-center text-xl mt-10 hidden">No Cocktails Found!</p>
+    </div>
+
+<!-- Modal structure -->
+<!-- Modal structure -->
+<div id="cocktailModal" class="fixed inset-0 bg-gray-900 bg-opacity-80 flex items-center justify-center hidden text-gray-700">
+     <div class="bg-white rounded-lg p-4 w-full max-w-sm max-h-80 overflow-auto">
+         <h2 id="modal-title" class="text-lg font-bold mb-2"></h2>
+         <div id="modal-body" class="text-sm"></div>
+         <button onclick="closeModal()" class="mt-4 bg-blue-500 text-white rounded px-4 py-2">Close</button>
+     </div>
+ </div>
+ 
+ 
+ 
+ 
+ 
+
+    <script src="app.js"></script>
+
+</body>
+</html>
